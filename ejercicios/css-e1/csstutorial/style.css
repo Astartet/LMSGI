@@ -1,0 +1,50 @@
+	body{
+		background: #ffe4c4;
+		color: #690fbc;
+		font-family: cursive, Helvetica, Arial;
+	}
+	h1{
+		font-family: monospace, Arial;
+	}
+	ul.navbar{
+		list-style-type: none;
+	    padding: 0;
+	    margin: 0;
+	    top: 2em;
+	    left: 1em;
+	    min-width: 10em;
+	    float: left;
+	}
+	ul.navbar li{
+	    background: white;
+	    margin: 0.5em 0;
+	    padding: 0.3em;
+	    border-right: 1em solid #000;
+	    transition: 0.5s;
+	}
+	ul.navbar li:hover{
+		background: #f0e0ff;
+		color: #fff;
+		border-right: 1em solid #fff;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+		transition: 0.5s;
+		margin-left: 5px;
+	}
+
+	ul.navbar a{
+    	text-decoration: none;
+    	display: flex;
+    	color: #000;
+	}
+	.cuerpo{
+		float: left;
+	    margin-left: 1em;
+	    transition: 0.5s;
+
+	}
+
+	address{
+     	margin-top: 1em;
+     	padding-top: 1em;
+     	border-top: thin dotted;
+     }

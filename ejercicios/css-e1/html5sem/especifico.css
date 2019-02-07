@@ -1,0 +1,24 @@
+
+
+.breakmenu ul {
+    display: flex;
+    list-style: none;
+}
+.breakmenu li {
+    padding: 2em;
+}
+
+section{
+	width: 70%;
+	float: left;
+}
+
+
+aside{
+	width: 30%;
+	float: left;
+}
+
+.container {
+    display: flow-root!important;
+}

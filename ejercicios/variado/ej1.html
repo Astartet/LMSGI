@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="https://daniel.fp-informatica.online/assets/css/general.css">
+
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      Daniel
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="/">Inicio</a>
+    <a href="/ejercicios/libro-xhtml/">Libro Xhtml</a>
+    <a href="/ejercicios/form/">Formularios</a>
+    <a href="/ejercicios/tables/">Tablas</a>
+    <a href="/ejercicios/variado/">Ejercicios Variados</a>
+    <a href="/ejercicios/css-e1/">CSS tutorial</a>
+  </div>
+</nav><br><br>
+
+	<h1>canvas</h1>
+
+
+	<canvas id="c1" width="150" height="150" title="Cuadro rojo"></canvas>
+	<canvas id="c2" width="100" height="100" title="Cuadro verde"></canvas>
+	<canvas id="c3" width="50" height="50" title="Cuadro azul"></canvas>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<canvas id="c4" width="150" height="100" title="Rectángulo casi blanco"></canvas>
+	<canvas id="c5" width="50" height="150" title="Rectángulo gris"></canvas>
+	<canvas id="c6" width="150" height="100" title="Rectángulo negro"></canvas>
+
+	<br>
+	<hr>
+	<br>
+
+	<canvas id="c7" width="150" height="150" title="Circulo gradiante"></canvas>
+	<canvas id="c8" width="150" height="150" title="Circulo morado"></canvas>
+	<canvas id="c9" width="150" height="150" title="Circulo Blanco"></canvas>
+
+
+
+	<script type="text/javascript">
+		
+		let canvas = document.getElementById('c1');
+		let contexto = canvas.getContext('2d');
+		contexto.fillStyle = '#ff0000';
+		contexto.fillRect(0, 0, 150, 150);
+
+		let canvas1 = document.getElementById('c2');
+		let contexto2 = canvas1.getContext('2d');
+		contexto2.fillStyle = '#00ff00';
+		contexto2.fillRect(0, 0, 100, 100);
+
+		let canvas3 = document.getElementById('c3');
+		let contexto3 = canvas3.getContext('2d');
+		contexto3.fillStyle = '#0000ff';
+		contexto3.fillRect(0, 0, 50, 50);
+
+	//s2
+		let canvas4 = document.getElementById('c4');
+		let contexto4 = canvas4.getContext('2d');
+		contexto4.fillStyle = '#efefef';
+		contexto4.fillRect(0, 0, 150, 100);
+
+		let canvas5 = document.getElementById('c5');
+		let contexto5 = canvas5.getContext('2d');
+		contexto5.fillStyle = '#888888';
+		contexto5.fillRect(0, 0, 50, 150);
+
+		let canvas6 = document.getElementById('c6');
+		let contexto6 = canvas6.getContext('2d');
+		contexto6.fillStyle = '#000000';
+		contexto6.fillRect(0, 0, 150, 100);
+	//s3
+		var c = document.getElementById("c7");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.strokeStyle = "#000000";            
+		ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+		var Gradi=ctx.createLinearGradient(0,0,170,0);
+		Gradi.addColorStop(0,"black");
+		Gradi.addColorStop(1,"white");
+
+		ctx.fillStyle = Gradi;
+		ctx.fill();      
+		ctx.stroke();
+
+		var d = document.getElementById("c8");
+		var cty = d.getContext("2d");
+		cty.beginPath();
+		cty.strokeStyle = "#000000";            
+		cty.arc(100, 75, 50, 0, 2 * Math.PI);
+		cty.fillStyle = '#ff00fe';
+		cty.fill();      
+		cty.stroke();
+
+		var e = document.getElementById("c9");
+		var ctz = e.getContext("2d");
+		ctz.beginPath();
+		ctz.strokeStyle = "#000000";            
+		ctz.arc(100, 75, 50, 0, 2 * Math.PI);
+		ctz.fillStyle = '#ffffff';
+		ctz.fill();      
+		ctz.stroke();
+
+
+	</script>
+
+<footer>
+  Editado el 12/12/2018 por <a href="/aboutme.html">Daniel B.</a>
+</footer>
+
+</body>
+</html>
