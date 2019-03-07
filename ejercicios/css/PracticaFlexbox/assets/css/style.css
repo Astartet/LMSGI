@@ -1,0 +1,35 @@
+    .contenedor {
+        display: flex;
+        flex-flow: row;
+        margin: 10px;
+        width: 100%;
+        justify-content: space-around;
+        align-content: space-around;
+}
+.articulo {
+
+    background: #30e3ca;
+    color: #40514e;
+    padding: 1em;
+    border-radius: 70px 10px;
+    margin: 10px;
+    width: 50%;
+
+}
+
+* {
+font-family: serif;
+}
+
+h1,h2,h3{
+font-family: monospace;
+}
+.contenedor.c_amd {
+    flex-flow: wrap;
+}
+.c_amd .articulo {
+    width: 46%;
+}
+.especial{
+    width: 100% !important;
+}

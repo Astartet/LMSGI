@@ -1,0 +1,92 @@
+body { 
+	display: grid;
+	grid-template-areas: 
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+  height: 100vh;
+      margin: 0;
+}
+
+header {
+	background: #79ff6a;
+	grid-area: header;
+	display: flex;
+    justify-content: space-between;
+}
+
+nav {
+	background: #67bfff;
+	grid-area: nav; 
+}
+
+section {
+	background: #d3fee4;
+	grid-area: section;    
+}
+
+aside {
+	background: #ff5f7b;
+	grid-area: aside; 
+}
+
+footer {
+	background: #63d7bd;
+	grid-area: footer;
+	display: flex;
+    justify-content: center;
+}
+
+header, nav, section, aside, footer {
+	padding: 5px;
+}
+.logo{
+    max-width: 200px;
+    height: auto;
+}
+.minombre{
+	align-self: center;
+    font-size: 2em;
+}
+
+footer a {
+    margin: 5px;
+}
+	    .contenedor {
+        display: flex;
+        flex-flow: row;
+        margin: 10px;
+        width: 100%;
+        justify-content: space-around;
+        align-content: space-around;
+}
+.articulo {
+
+    background: #30e3ca;
+    color: #40514e;
+    padding: 1em;
+    border-radius: 70px 10px;
+    margin: 10px;
+    width: 50%;
+
+}
+
+* {
+font-family: serif;
+}
+
+h1,h2,h3{
+font-family: monospace;
+}
+.contenedor.c_amd {
+    flex-flow: wrap;
+}
+.c_amd .articulo {
+    width: 30%;
+}
+.especial{
+    width: 100% !important;
+}
